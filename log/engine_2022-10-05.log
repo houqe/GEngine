@@ -1,0 +1,1 @@
+[INFO] [2022-10-05 17:50:27,606] [GEngine.py] [start] [20] > Namespace(task_id='1a8531b6fa114e69b982ec25cc773d8c', targets=['10.21.32.2'], vids=['123456'], dir_name='./pocs', time_out=60, thread_num=10)

@@ -1,0 +1,53 @@
+[INFO] [2022-10-06 10:03:51,520] [GEngine.py] [start] [14] > Namespace(task_id='8214e56fa6444f1a9349e42358fa482d', targets=['10.20.15.21'], vids=['1231'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:47:30,262] [GEngine.py] [start] [15] > Namespace(task_id='690dc93c8fb94ea9bec8a740b0ff9792', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:48:52,147] [GEngine.py] [start] [15] > Namespace(task_id='82d5cba60ee74cf3bdc45844b2638247', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:48:52,152] [PocManager.py] [load_poc] [32] > {'l': 'vb_2017_0060_Metinfo_5_3_17_X_Rewrite_url_Sql_Injection.py'}
+[INFO] [2022-10-06 11:50:04,866] [GEngine.py] [start] [15] > Namespace(task_id='74edafbbadf64a358bf0336e4cb3f30c', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:50:04,868] [PocManager.py] [load_poc] [32] > {'l': 'vb_2017_0060_Metinfo_5_3_17_X_Rewrite_url_Sql_Injection.py'}
+[INFO] [2022-10-06 11:50:04,870] [PocManager.py] [load_poc] [51] > defaultdict(<class 'list'>, {'l': ['pocs.vb_2017_0060_Metinfo_5_3_17_X_Rewrite_url_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_5_3_17_X_Rewrite_url_Sql_Injection.MetinfoXRewriteurlSQLInjection'>]})
+[INFO] [2022-10-06 11:50:40,164] [GEngine.py] [start] [15] > Namespace(task_id='d24c47bfb0014bedb3e1c4fc84b85acb', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:50:40,166] [PocManager.py] [load_poc] [32] > {'l': 'vb_2017_0060_Metinfo_Sql_Injection.py'}
+[INFO] [2022-10-06 11:50:40,169] [PocManager.py] [load_poc] [51] > defaultdict(<class 'list'>, {'l': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>]})
+[INFO] [2022-10-06 11:50:51,881] [GEngine.py] [start] [15] > Namespace(task_id='6aed0d751c1d4ca6b8cbe66f953749fd', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:50:51,883] [PocManager.py] [load_poc] [32] > {'l': 'vb_2017_0060_Metinfo_Sql_Injection.py'}
+[INFO] [2022-10-06 11:50:51,885] [PocManager.py] [load_poc] [51] > defaultdict(<class 'list'>, {'l': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>]})
+[INFO] [2022-10-06 11:51:47,242] [GEngine.py] [start] [15] > Namespace(task_id='1ca0e59bcd394ca1835b4c3c567a3e02', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:51:47,245] [PocManager.py] [load_poc] [33] > {'l': 'vb_2017_0060_Metinfo_Sql_Injection.py'}
+[INFO] [2022-10-06 11:51:47,247] [PocManager.py] [load_poc] [52] > defaultdict(<class 'list'>, {'l': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>]})
+[INFO] [2022-10-06 11:52:17,527] [GEngine.py] [start] [15] > Namespace(task_id='bdedc9f84ab341c49ce1c952c759658f', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:52:17,530] [PocManager.py] [load_poc] [34] > {'l': 'vb_2017_0060_Metinfo_Sql_Injection.py'}
+[INFO] [2022-10-06 11:52:17,531] [PocManager.py] [load_poc] [53] > defaultdict(<class 'list'>, {'l': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>]})
+[INFO] [2022-10-06 11:53:06,489] [GEngine.py] [start] [15] > Namespace(task_id='bdaa212694ce4f65b8eb995fc638e537', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:53:06,491] [PocManager.py] [load_poc] [34] > {'vb_2017_0060': 'vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001': 'vb_2022_0001_VSCC.py', 'vb_2022_0002': 'vb_2022_0002_CSXS.py'}
+[WARNING] [2022-10-06 11:53:06,501] [PocManager.py] [load_poc] [51] > Failed to load PoC vb_2022_0001_VSCC.py. module() takes at most 2 arguments (3 given)
+[INFO] [2022-10-06 11:53:06,504] [PocManager.py] [load_poc] [53] > defaultdict(<class 'list'>, {'vb_2017_0060': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>], 'vb_2022_0002': ['pocs.vb_2022_0002_CSXS', <class 'pocs.vb_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-06 11:53:41,978] [GEngine.py] [start] [15] > Namespace(task_id='5f9f736872d34cd4a58e8b3c73cbac2d', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:53:41,980] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-06 11:53:41,981] [PocManager.py] [load_poc] [34] > {'vb_2017_0060': 'vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001': 'vb_2022_0001_VSCC.py', 'vb_2022_0002': 'vb_2022_0002_CSXS.py'}
+[WARNING] [2022-10-06 11:53:41,983] [PocManager.py] [load_poc] [51] > Failed to load PoC vb_2022_0001_VSCC.py. module() takes at most 2 arguments (3 given)
+[INFO] [2022-10-06 11:53:41,984] [PocManager.py] [load_poc] [53] > defaultdict(<class 'list'>, {'vb_2017_0060': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>], 'vb_2022_0002': ['pocs.vb_2022_0002_CSXS', <class 'pocs.vb_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-06 11:53:55,666] [GEngine.py] [start] [15] > Namespace(task_id='566ecba5ffed4e4cb275862b4a1dc364', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:53:55,667] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-06 11:53:55,668] [PocManager.py] [load_poc] [34] > {'vb_2017_0060': 'vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001': 'vb_2022_0001_VSCC.py', 'vb_2022_0002': 'vb_2022_0002_CSXS.py'}
+[WARNING] [2022-10-06 11:53:55,670] [PocManager.py] [load_poc] [51] > Failed to load PoC vb_2022_0001_VSCC.py. module() takes at most 2 arguments (3 given)
+[INFO] [2022-10-06 11:53:55,670] [PocManager.py] [load_poc] [53] > defaultdict(<class 'list'>, {'vb_2017_0060': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>], 'vb_2022_0002': ['pocs.vb_2022_0002_CSXS', <class 'pocs.vb_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-06 11:57:56,091] [GEngine.py] [start] [15] > Namespace(task_id='040e27043a9646fcbfe88d7a6b83b227', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:57:56,093] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-06 11:57:56,094] [PocManager.py] [load_poc] [34] > {'vb_2017_0060': 'vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001': 'vb_2022_0001_VSCC.py', 'vb_2022_0002': 'vb_2022_0002_CSXS.py'}
+[WARNING] [2022-10-06 11:57:56,098] [PocManager.py] [load_poc] [51] > Failed to load PoC vb_2022_0001_VSCC.py. module() takes at most 2 arguments (3 given)
+[INFO] [2022-10-06 11:57:56,099] [PocManager.py] [load_poc] [53] > defaultdict(<class 'list'>, {'vb_2017_0060': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>], 'vb_2022_0002': ['pocs.vb_2022_0002_CSXS', <class 'pocs.vb_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-06 11:59:21,054] [GEngine.py] [start] [15] > Namespace(task_id='61d3ded68b7d486ea31650028f25aa2a', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:59:21,056] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-06 11:59:21,056] [PocManager.py] [load_poc] [34] > {'vb_2017_0060': 'vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001': 'vb_2022_0001_VSCC.py', 'vb_2022_0002': 'vb_2022_0002_CSXS.py'}
+[WARNING] [2022-10-06 11:59:21,060] [PocManager.py] [load_poc] [51] > Failed to load PoC vb_2022_0001_VSCC.py. module() takes at most 2 arguments (3 given)
+[INFO] [2022-10-06 11:59:21,061] [PocManager.py] [load_poc] [53] > defaultdict(<class 'list'>, {'vb_2017_0060': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>], 'vb_2022_0002': ['pocs.vb_2022_0002_CSXS', <class 'pocs.vb_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-06 11:59:49,935] [GEngine.py] [start] [15] > Namespace(task_id='4a4a520bf24f407ba60b8b4c210e6422', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 11:59:49,937] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-06 11:59:49,938] [PocManager.py] [load_poc] [34] > {'vb_2017_0060': 'vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001': 'vb_2022_0001_VSCC.py', 'vb_2022_0002': 'vb_2022_0002_CSXS.py'}
+[WARNING] [2022-10-06 11:59:49,942] [PocManager.py] [load_poc] [51] > Failed to load PoC vb_2022_0001_VSCC.py. module() takes at most 2 arguments (3 given)
+[INFO] [2022-10-06 11:59:49,944] [PocManager.py] [load_poc] [53] > defaultdict(<class 'list'>, {'vb_2017_0060': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>], 'vb_2022_0002': ['pocs.vb_2022_0002_CSXS', <class 'pocs.vb_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-06 12:02:49,632] [GEngine.py] [start] [15] > Namespace(task_id='9ac45977f7de401498e28e5691bdf2c1', targets=['10.20.15.21'], vids=['all'], dir_name='./pocs', time_out=60, thread_num=10)
+[INFO] [2022-10-06 12:02:49,634] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-06 12:02:49,634] [PocManager.py] [load_poc] [33] > {'vb_2017_0060': 'vb_2017_0060_Metinfo_Sql_Injection.py', 'vb_2022_0001': 'vb_2022_0001_VSCC.py', 'vb_2022_0002': 'vb_2022_0002_CSXS.py'}
+[WARNING] [2022-10-06 12:02:49,636] [PocManager.py] [load_poc] [50] > Failed to load PoC vb_2022_0001_VSCC.py. module() takes at most 2 arguments (3 given)
+[INFO] [2022-10-06 12:02:49,636] [PocManager.py] [load_poc] [52] > defaultdict(<class 'list'>, {'vb_2017_0060': ['pocs.vb_2017_0060_Metinfo_Sql_Injection', <class 'pocs.vb_2017_0060_Metinfo_Sql_Injection.MetinfoXRewriteurlSQLInjection'>], 'vb_2022_0002': ['pocs.vb_2022_0002_CSXS', <class 'pocs.vb_2022_0002_CSXS.CSXS'>]})

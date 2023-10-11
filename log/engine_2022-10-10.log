@@ -1,0 +1,71 @@
+[INFO] [2022-10-10 16:04:04,800] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='6d2ae0e903e34413848c3144353de2ce', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 16:04:04,826] [GEngine.py] [start] [17] > ['all']
+[INFO] [2022-10-10 16:04:04,827] [PocManager.py] [load_poc] [22] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-10 16:04:04,827] [PocManager.py] [load_poc] [33] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-10 16:04:04,852] [PocManager.py] [load_poc] [52] > poc_classes:defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-10 16:05:01,803] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='f5553952d1534f35b391998dae7e27e1', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 16:05:01,804] [PocManager.py] [load_poc] [22] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-10 16:05:01,804] [PocManager.py] [load_poc] [33] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-10 16:05:01,805] [PocManager.py] [load_poc] [52] > poc_classes:defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-10 16:22:34,669] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='50500ea2aec64cc5910e19c013718e6c', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 16:22:34,671] [PocManager.py] [load_poc] [22] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-10 16:22:34,671] [PocManager.py] [load_poc] [33] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-10 16:22:34,672] [PocManager.py] [load_poc] [52] > poc_classes:defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-10 16:22:53,503] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='79b96a571a5445618334f947fde676d6', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 16:22:53,505] [PocManager.py] [load_poc] [22] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-10 16:22:53,505] [PocManager.py] [load_poc] [33] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[WARNING] [2022-10-10 16:22:53,505] [PocManager.py] [load_poc] [47] > Failed to import PoC v_2022_0001_VSCC.py. No module named './pocs'
+[WARNING] [2022-10-10 16:22:53,505] [PocManager.py] [load_poc] [47] > Failed to import PoC v_2022_0002_CSXS.py. No module named './pocs'
+[INFO] [2022-10-10 16:22:53,505] [PocManager.py] [load_poc] [52] > poc_classes:defaultdict(<class 'list'>, {})
+[INFO] [2022-10-10 16:23:10,845] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='c53f4351960947939ff7425afadc4e3e', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 16:23:10,847] [PocManager.py] [load_poc] [22] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-10 16:23:10,847] [PocManager.py] [load_poc] [33] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-10 16:23:10,847] [PocManager.py] [load_poc] [40] > ./pocs.v_2022_0001_VSCC.py
+[WARNING] [2022-10-10 16:23:10,847] [PocManager.py] [load_poc] [48] > Failed to import PoC v_2022_0001_VSCC.py. No module named './pocs'
+[INFO] [2022-10-10 16:23:10,848] [PocManager.py] [load_poc] [40] > ./pocs.v_2022_0002_CSXS.py
+[WARNING] [2022-10-10 16:23:10,848] [PocManager.py] [load_poc] [48] > Failed to import PoC v_2022_0002_CSXS.py. No module named './pocs'
+[INFO] [2022-10-10 16:23:10,849] [PocManager.py] [load_poc] [53] > poc_classes:defaultdict(<class 'list'>, {})
+[INFO] [2022-10-10 16:24:27,339] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='012e1bcd02cb4999b9cb4655721d446b', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 16:24:27,340] [PocManager.py] [load_poc] [22] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-10 16:24:27,340] [PocManager.py] [load_poc] [33] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-10 16:24:27,341] [PocManager.py] [load_poc] [40] > ./pocs.v_2022_0001_VSCC
+[WARNING] [2022-10-10 16:24:27,341] [PocManager.py] [load_poc] [48] > Failed to import PoC v_2022_0001_VSCC.py. No module named './pocs'
+[INFO] [2022-10-10 16:24:27,341] [PocManager.py] [load_poc] [40] > ./pocs.v_2022_0002_CSXS
+[WARNING] [2022-10-10 16:24:27,342] [PocManager.py] [load_poc] [48] > Failed to import PoC v_2022_0002_CSXS.py. No module named './pocs'
+[INFO] [2022-10-10 16:24:27,342] [PocManager.py] [load_poc] [53] > poc_classes:defaultdict(<class 'list'>, {})
+[INFO] [2022-10-10 16:27:31,690] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='88c2f1ab75b6410984686b4b0cba8fcf', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 16:27:31,692] [PocManager.py] [load_poc] [22] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-10 16:27:31,692] [PocManager.py] [load_poc] [33] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-10 16:27:31,693] [PocManager.py] [load_poc] [45] > <module 'pocs.v_2022_0001_VSCC' from 'E:\\pyWork\\GEngine\\pocs\\v_2022_0001_VSCC.py'>
+[INFO] [2022-10-10 16:27:31,693] [PocManager.py] [load_poc] [46] > VSCC
+[INFO] [2022-10-10 16:27:31,693] [PocManager.py] [load_poc] [45] > <module 'pocs.v_2022_0002_CSXS' from 'E:\\pyWork\\GEngine\\pocs\\v_2022_0002_CSXS.py'>
+[INFO] [2022-10-10 16:27:31,693] [PocManager.py] [load_poc] [46] > CSXS
+[INFO] [2022-10-10 16:27:31,693] [PocManager.py] [load_poc] [55] > poc_classes:defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-10 16:46:44,978] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='b516218d74c24628ae34bbeb47d7f3ca', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 16:46:44,980] [PocManager.py] [load_poc] [23] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-10 16:46:44,980] [PocManager.py] [load_poc] [34] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-10 16:46:44,986] [PocManager.py] [load_poc] [54] > poc_classes:defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-10 17:01:02,520] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='7e6d264b2a2e435e8d99523256b4a760', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 17:01:02,521] [PocManager.py] [load_poc] [23] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-10 17:01:02,521] [PocManager.py] [load_poc] [34] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-10 17:01:02,522] [PocManager.py] [load_poc] [54] > poc_classes:defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-10 17:02:33,925] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='13d5755477d942eda48bdcf858c8a1fd', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 17:02:33,926] [PocManager.py] [run] [63] > Get task [13d5755477d942eda48bdcf858c8a1fd]: targets['10.10.20.23', '10.10.20.50'], poc_id['all']
+[ERROR] [2022-10-10 17:02:34,239] [MongoDB.py] [insert_data] [32] > Failed to insert data to mongodb. 10.10.20.50:27017: timed out, Timeout: 0.3s, Topology Description: <TopologyDescription id: 6343dfa923ff56e36bc1461a, topology_type: Unknown, servers: [<ServerDescription ('10.10.20.50', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('10.10.20.50:27017: timed out')>]>
+[INFO] [2022-10-10 17:02:59,039] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='52db5d80023f4ea6a47b5a6f6aa5f8ea', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 17:02:59,040] [PocManager.py] [run] [63] > Get task [52db5d80023f4ea6a47b5a6f6aa5f8ea]: targets['10.10.20.23', '10.10.20.50'], poc_id['all']
+[ERROR] [2022-10-10 17:02:59,852] [MongoDB.py] [insert_data] [32] > Failed to insert data to mongodb. 10.10.20.50:27017: timed out, Timeout: 0.3s, Topology Description: <TopologyDescription id: 6343dfc3a757d3650703833f, topology_type: Unknown, servers: [<ServerDescription ('10.10.20.50', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('10.10.20.50:27017: timed out')>]>
+[INFO] [2022-10-10 17:02:59,853] [PocManager.py] [load_poc] [23] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-10 17:02:59,854] [PocManager.py] [load_poc] [34] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-10 17:02:59,857] [PocManager.py] [load_poc] [54] > poc_classes:defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-10 17:17:09,606] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='d9d1ddecb7894936b2a70a47998da858', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 17:17:09,607] [PocManager.py] [run] [63] > Get task [d9d1ddecb7894936b2a70a47998da858]: targets['10.10.20.23', '10.10.20.50'], poc_id['all']
+[ERROR] [2022-10-10 17:17:09,920] [MongoDB.py] [insert_data] [32] > Failed to insert data to mongodb. 10.10.20.50:27017: timed out, Timeout: 0.3s, Topology Description: <TopologyDescription id: 6343e3150e9ffe271db2ae17, topology_type: Unknown, servers: [<ServerDescription ('10.10.20.50', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('10.10.20.50:27017: timed out')>]>
+[INFO] [2022-10-10 17:17:09,921] [PocManager.py] [load_poc] [23] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-10 17:17:09,921] [PocManager.py] [load_poc] [34] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-10 17:17:09,925] [PocManager.py] [load_poc] [54] > poc_classes:defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
+[INFO] [2022-10-10 17:23:24,384] [GEngine.py] [start] [15] > Namespace(dir_name='./pocs', targets=['10.10.20.23', '10.10.20.50'], task_id='4284b146f089431f9f290d313449a8ab', thread_num=10, time_out=60, vids=['all'])
+[INFO] [2022-10-10 17:23:24,385] [PocManager.py] [run] [63] > Get task [4284b146f089431f9f290d313449a8ab]: targets['10.10.20.23', '10.10.20.50'], poc_id['all']
+[INFO] [2022-10-10 17:23:24,404] [PocManager.py] [load_poc] [23] > poc_name:['v_2022_0001_VSCC.py', 'v_2022_0002_CSXS.py']
+[INFO] [2022-10-10 17:23:24,404] [PocManager.py] [load_poc] [34] > pocs:{'v_2022_0001': 'v_2022_0001_VSCC.py', 'v_2022_0002': 'v_2022_0002_CSXS.py'}
+[INFO] [2022-10-10 17:23:24,406] [PocManager.py] [load_poc] [54] > poc_classes:defaultdict(<class 'list'>, {'v_2022_0001': ['pocs.v_2022_0001_VSCC', <class 'pocs.v_2022_0001_VSCC.VSCC'>], 'v_2022_0002': ['pocs.v_2022_0002_CSXS', <class 'pocs.v_2022_0002_CSXS.CSXS'>]})
